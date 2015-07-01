@@ -240,7 +240,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     //更换顶部排序item的文字
     self.sortView.titleLabel.text = selectedSort.label;
-    self.sortView.subTitleLabel.text = @"排序";
+    self.sortView.subTitleLabel.text = @"www排序";
     
     self.selectedSortValue = selectedSort.value;
     
