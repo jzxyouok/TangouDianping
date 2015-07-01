@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRCitiesVC">
+            <connections>
+                <outlet property="tableView" destination="b5V-Lm-7EO" id="AQe-MF-ly1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_navigationBar_normal" translatesAutoresizingMaskIntoConstraints="NO" id="I58-EL-Bga">
+                    <rect key="frame" x="0.0" y="0.0" width="420" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="Euj-XW-BQv"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDp-6d-OrT" userLabel="NavView">
+                    <rect key="frame" x="0.0" y="0.0" width="420" height="62"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp0-z6-mGo">
+                            <rect key="frame" x="0.0" y="0.0" width="58" height="71"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="D22-MU-YeX"/>
+                                <constraint firstAttribute="width" constant="58" id="T0M-w0-QWQ"/>
+                            </constraints>
+                            <state key="normal" title="X">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="D22-MU-YeX"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="clickCancle:" destination="-1" eventType="touchUpInside" id="pV7-tT-yQr"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="切换城市" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZk-c5-aQb">
+                            <rect key="frame" x="66" y="19" width="288" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="0Ck-Xy-Ii1"/>
+                        <constraint firstItem="cp0-z6-mGo" firstAttribute="top" secondItem="aDp-6d-OrT" secondAttribute="top" id="1cQ-dS-EUi"/>
+                        <constraint firstItem="ZZk-c5-aQb" firstAttribute="centerX" secondItem="aDp-6d-OrT" secondAttribute="centerX" id="JhF-Wx-Dnb"/>
+                        <constraint firstAttribute="bottom" secondItem="ZZk-c5-aQb" secondAttribute="bottom" constant="9" id="UCy-1p-Jyu"/>
+                        <constraint firstItem="cp0-z6-mGo" firstAttribute="leading" secondItem="aDp-6d-OrT" secondAttribute="leading" id="UQk-rr-ysi"/>
+                        <constraint firstItem="ZZk-c5-aQb" firstAttribute="top" secondItem="aDp-6d-OrT" secondAttribute="top" constant="19" id="UkW-v5-RgY"/>
+                        <constraint firstAttribute="bottom" secondItem="cp0-z6-mGo" secondAttribute="bottom" constant="-9" id="VGq-HB-eKA"/>
+                        <constraint firstAttribute="bottom" secondItem="cp0-z6-mGo" secondAttribute="bottom" constant="-7" id="XGa-K9-I33"/>
+                        <constraint firstItem="ZZk-c5-aQb" firstAttribute="leading" secondItem="cp0-z6-mGo" secondAttribute="trailing" constant="8" symbolic="YES" id="gOG-sS-s2p"/>
+                        <constraint firstItem="cp0-z6-mGo" firstAttribute="top" secondItem="aDp-6d-OrT" secondAttribute="top" id="oag-Lq-0zU"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0Ck-Xy-Ii1"/>
+                            <exclude reference="1cQ-dS-EUi"/>
+                            <exclude reference="XGa-K9-I33"/>
+                        </mask>
+                    </variation>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="b5V-Lm-7EO">
+                    <rect key="frame" x="10" y="72" width="400" height="486"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cde-F4-MWE"/>
+                        <outlet property="delegate" destination="-1" id="gtw-GJ-ak2"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="b5V-Lm-7EO" firstAttribute="top" secondItem="I58-EL-Bga" secondAttribute="bottom" constant="5" id="5MQ-ZD-IQe"/>
+                <constraint firstAttribute="bottom" secondItem="b5V-Lm-7EO" secondAttribute="bottom" constant="10" id="CIq-QU-qEW"/>
+                <constraint firstItem="I58-EL-Bga" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LLe-yf-D3V"/>
+                <constraint firstAttribute="bottom" secondItem="aDp-6d-OrT" secondAttribute="bottom" constant="538" id="Q40-Cd-Avp"/>
+                <constraint firstItem="aDp-6d-OrT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SPU-eU-psC"/>
+                <constraint firstItem="I58-EL-Bga" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cs5-ad-GD4"/>
+                <constraint firstAttribute="trailing" secondItem="b5V-Lm-7EO" secondAttribute="trailing" constant="10" id="hlO-A3-xHn"/>
+                <constraint firstItem="aDp-6d-OrT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pNk-FT-WKh"/>
+                <constraint firstAttribute="trailing" secondItem="aDp-6d-OrT" secondAttribute="trailing" id="pRd-bd-cCq"/>
+                <constraint firstItem="b5V-Lm-7EO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="qbj-td-WXj"/>
+                <constraint firstItem="aDp-6d-OrT" firstAttribute="top" secondItem="I58-EL-Bga" secondAttribute="top" id="r3b-S6-2nM"/>
+                <constraint firstAttribute="trailing" secondItem="I58-EL-Bga" secondAttribute="trailing" id="vCj-Da-2Tz"/>
+                <constraint firstItem="b5V-Lm-7EO" firstAttribute="top" secondItem="aDp-6d-OrT" secondAttribute="bottom" constant="10" id="vrJ-zD-V3p"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Q40-Cd-Avp"/>
+                    <exclude reference="SPU-eU-psC"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_navigationBar_normal" width="124" height="124"/>
+    </resources>
+</document>

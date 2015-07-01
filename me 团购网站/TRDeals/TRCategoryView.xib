@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TRCategoryView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2Mb-T3-QTJ" userLabel="MainTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="Bfv-B8-gvA"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Dzo-hD-QhG"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gJo-oO-bfg" userLabel="SecondTableView">
+                    <rect key="frame" x="150" y="0.0" width="150" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="CCW-iz-Jtj"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="gjc-4C-Qc9"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gJo-oO-bfg" secondAttribute="trailing" id="37E-PD-uH2"/>
+                <constraint firstAttribute="bottom" secondItem="gJo-oO-bfg" secondAttribute="bottom" id="3L8-PI-BLn"/>
+                <constraint firstItem="2Mb-T3-QTJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6cw-7l-68R"/>
+                <constraint firstItem="gJo-oO-bfg" firstAttribute="leading" secondItem="2Mb-T3-QTJ" secondAttribute="trailing" id="Mt8-2X-UyL"/>
+                <constraint firstItem="2Mb-T3-QTJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NNe-rK-2OP"/>
+                <constraint firstItem="gJo-oO-bfg" firstAttribute="leading" secondItem="2Mb-T3-QTJ" secondAttribute="trailing" id="O4t-sV-1Ud"/>
+                <constraint firstItem="gJo-oO-bfg" firstAttribute="width" secondItem="2Mb-T3-QTJ" secondAttribute="width" id="glQ-xq-9r9"/>
+                <constraint firstAttribute="bottom" secondItem="2Mb-T3-QTJ" secondAttribute="bottom" id="iSm-dR-AGX"/>
+                <constraint firstItem="gJo-oO-bfg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jCV-cy-MRH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainTableView" destination="2Mb-T3-QTJ" id="zDC-bg-HfQ"/>
+                <outlet property="secondTableView" destination="gJo-oO-bfg" id="olH-n8-YRz"/>
+            </connections>
+        </view>
+    </objects>
+</document>
