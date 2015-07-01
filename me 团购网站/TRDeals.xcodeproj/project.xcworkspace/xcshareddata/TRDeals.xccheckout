@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1D5C82C2-6723-4076-B7A6-D5753502654B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TRDeals</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>849BD117E938D17E562F65D39E99333091C0BBC2</key>
+		<string>https://github.com/wanweiwei/TangouDianping.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>me 团购网站/TRDeals.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>849BD117E938D17E562F65D39E99333091C0BBC2</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wanweiwei/TangouDianping.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>849BD117E938D17E562F65D39E99333091C0BBC2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>849BD117E938D17E562F65D39E99333091C0BBC2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TangouDianping</string>
+		</dict>
+	</array>
+</dict>
+</plist>

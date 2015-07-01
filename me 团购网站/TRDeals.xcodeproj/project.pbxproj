@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		853A6DA51B4397C600F8FA5B /* new.c in Sources */ = {isa = PBXBuildFile; fileRef = 853A6DA41B4397C600F8FA5B /* new.c */; };
 		856014AC1B426B8D00E772AD /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 856014AB1B426B8D00E772AD /* UIBarButtonItem+Extension.m */; };
 		856014C81B426BDF00E772AD /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 856014B01B426BDF00E772AD /* MASCompositeConstraint.m */; };
 		856014C91B426BDF00E772AD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 856014B31B426BDF00E772AD /* MASConstraint.m */; };
@@ -82,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		853A6DA41B4397C600F8FA5B /* new.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = new.c; sourceTree = "<group>"; };
 		856014AA1B426B8D00E772AD /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		856014AB1B426B8D00E772AD /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		856014AF1B426BDF00E772AD /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		856D653D1B3B9C500026C977 /* TRDeals */ = {
 			isa = PBXGroup;
 			children = (
+				853A6DA41B4397C600F8FA5B /* new.c */,
 				856D65481B3B9C500026C977 /* Main.storyboard */,
 				856D65941B3BF6000026C977 /* View */,
 				856D658D1B3BE8ED0026C977 /* MainController */,
@@ -673,6 +676,7 @@
 				85757BC71B4143A000AC2CC1 /* NSData+ImageContentType.m in Sources */,
 				856D65441B3B9C500026C977 /* AppDelegate.m in Sources */,
 				856014AC1B426B8D00E772AD /* UIBarButtonItem+Extension.m in Sources */,
+				853A6DA51B4397C600F8FA5B /* new.c in Sources */,
 				856D65931B3BE97C0026C977 /* TRMainNavController.m in Sources */,
 				856D658B1B3BE3E70026C977 /* TRCity.m in Sources */,
 				856D65971B3BF6580026C977 /* TRNavLeftView.m in Sources */,
